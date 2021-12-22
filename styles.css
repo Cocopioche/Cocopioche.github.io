@@ -1,0 +1,137 @@
+#content {
+  display: grid;
+  grid-template-columns: 15% auto 200px 15% ;
+  grid-template-rows: auto auto 200px auto auto 75%;
+  margin: 0px;
+  width: 100%;
+}
+
+p {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+sup {
+  font-size: xx-small;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  margin: 0px;
+}
+h2 {
+  text-align: center;
+  margin: 0px;
+}
+table tr td{
+  vertical-align: top;
+}
+
+/*header*/
+.header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  color: rgb(238, 238, 238);
+  background-color:#021245;
+  padding: 10px;
+}
+
+.header hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid gray;
+  margin: 10px ;
+}
+/*navigation*/
+.nav {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  text-align: center;
+  background-color: #021245;
+  padding-bottom: 20px;
+}
+/*button*/
+.nav ul{
+  list-style-type: none;
+}
+.nav ul li{
+  font-size: large;
+  font-weight: bold;
+  display: inline-block;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+/*link*/
+.nav ul li a{
+  padding: 10px;
+  background-color: lightgray;
+  text-decoration: none;
+}
+.nav ul li a:hover{
+  background-color: darkgray;
+}
+.nav ul li a:active{
+  background-color: gray;
+}
+.nav ul li a:visited{
+  color: black;
+}
+.nav ul li a:link{
+  color: black;
+}
+/*left padding*/
+.left {
+  background-color: #021245;
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start:3;
+  grid-row-end: 6;
+}
+/*right padding*/
+.right {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start:3;
+  grid-row-end: 6;
+  background-color: #021245;
+}
+/*first line of content*/
+.content-1 {
+  margin-left: 30px;
+  grid-column-start: 2;
+  grid-column-end: 3;
+}
+/*logo of kurzgesagt*/
+.image {
+  margin-right: 30px;
+  grid-column-start: 3;
+  grid-column-end: 4;
+  text-align: center;
+}
+.image img{
+  width: 200px;
+  height: 200px;
+}
+/*second contentLine*/
+.content-2 {
+  grid-column-start: 2;
+  grid-column-end: 4;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+/*footer and source*/
+.foot {
+  padding: 15px;
+  grid-column-start: 2;
+  grid-column-end: 4;
+  background-color: lightgray;
+}
+/*botom color*/
+.botom {
+  grid-row-start: 6;
+  grid-row-end:7 ;
+  grid-column-start:1 ;
+  grid-column-end: -1;
+  background-color: #021245;
+}
